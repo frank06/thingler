@@ -57,7 +57,7 @@ this.get = function (id, callback) {
                 if (e) {
                     callback(e, result);
                 } else {
-                    callback(null, result.json);
+                    callback(null, result); // FIXME this one doesn't have the json getter
                 }
             });
         }

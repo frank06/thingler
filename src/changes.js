@@ -64,7 +64,9 @@ this.post = function (res, id, params, session) {
                 res.send(status, {}, {
                     rev: rev,
                     commits: dirty.filter(function (commit) {
-                        return commit.rev > params.rev;
+                        // FIXME i know this is bad, ok ok
+                        // return all changed until we figure out a proper riak version with vclocks
+                        return commit.rev !== params.rev;
                     })
                 });
             }
