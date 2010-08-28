@@ -1,0 +1,9 @@
+{
+  "name": "thingler",
+  "version": "0.0.1",
+  "dependencies": {
+    "journey": ">=0.2.8",
+    "node-static": ">=0.5.1",
+    "riak-js": "0.2.2f"
+  }
+}
