@@ -2,7 +2,7 @@
 
 PID_FILE="/tmp/thinglerd.pid"
 SERVER_PATH="$PWD/src/index.js"
-PORT=80
+PORT=4002
 
 if [ "$1" = "start" ]; then
     if [ -e $PID_FILE ]; then
